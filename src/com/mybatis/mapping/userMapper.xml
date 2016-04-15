@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper .//EN" "http://mybatis.org/dtd/mybatis--mapper.dtd">
+
+<mapper namespace="com.mybatis.mapping.userMapper">
+
+	<select id="getUser" parameterType="int" 
+	resultType="com.mybatis.domain.User"> 
+	select * from users where id=#{id}   
+	</select>
+</mapper> 
+
+
